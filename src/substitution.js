@@ -38,7 +38,6 @@ if (!(cypher.length === 26) || findRepeatLetters(cypher)) return false;
         currentAlpha = cypher;
         intendedAlpha = realAlpha;
             //Fun story for the graders here! I worked on this function forever, and couldn't get decoding to work and I didn't know why. Turns out, I was assigning to a variable called 'intendedAlphabet' instead of 'intendedAlpha' (which it didn't get mad about even though I never declared it)! Fun times! (:
-        console.log(currentAlpha);
     };
 
     const words = input.toLowerCase().split(" ");

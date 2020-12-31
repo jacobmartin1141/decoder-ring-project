@@ -49,10 +49,8 @@ function polybius(input, encode = true) {
 
                 xCoord = parseInt(curr0[i] - 1);
                 yCoord = parseInt(curr0[i + 1] - 1);
-                console.log(xCoord, yCoord);
 
                 letterIndex = ((yCoord * 5) + xCoord);
-                console.log(letterIndex);
 
                 result.push(alphaTrans[letterIndex]);
             }

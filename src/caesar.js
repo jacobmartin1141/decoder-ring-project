@@ -26,14 +26,11 @@ function caesar(input, shift, encode = true) {
             let letterIndex = alphabet.indexOf(curr0);
             //The caesar encoding is accomplished by A) finding the index of the current letter in the alphabet vaiable...
 
-            console.log("\n" + letterIndex);
-
             if((letterIndex + shift) > 25) {
                 letterIndex -= 26;
             } else if((letterIndex + shift) < -25) {
                 letterIndex += 26;
             };
-            console.log(letterIndex);
             //.. B) checking if the letter index plus the shift value is Ba) greater than 25 (and subtracting 25 if true), or Bb) less than -25 (and subtracting if true).
 
             result.push(alphabet[letterIndex + shift]);

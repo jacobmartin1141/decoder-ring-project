@@ -3,9 +3,6 @@ const expect = require("chai").expect;
 const substitution = require("../src/substitution").substitution;
 const findRepeatLetters = require("../src/substitution").findRepeatLetters;
 
-const realAlphabet = "abcdefghijklmnopqrstuvwxyz";
-const testCodex = "poiuytrewqlkjhgfdsamnbvcxz";
-
 describe("findRepeatLetters", () => {
     it("Should return true is there are repeating letters in the input", () => {
         const actual = findRepeatLetters("poiuytrewqlkjhgfdsamnbvcxp");
@@ -18,6 +15,9 @@ describe("findRepeatLetters", () => {
 });
 
 describe("substitution", () => {
+    const realAlphabet = "abcdefghijklmnopqrstuvwxyz";
+    const testCodex = "poiuytrewqlkjhgfdsamnbvcxz";
+
     it("Should return false if the alphabet parameter is less than 26 letters long.", () => {
         const actual = substitution("Message", "poiuytrewqlkjhgfdsamnbvcx");
         expect(actual).to.be.false;
